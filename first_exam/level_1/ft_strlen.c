@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/12 10:24:04 by hanacop           #+#    #+#             */
+/*   Updated: 2025/02/12 10:26:13 by hanacop          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Assignment name  : ft_strlen
 Expected files   : ft_strlen.c
 Allowed functions:
@@ -13,7 +25,9 @@ int	ft_strlen(char *str);*/
 
 int	ft_strlen(char *str)
 {
-	int	counter = 0;
+	int	counter;
+
+	counter = 0;
 	while (*str)
 	{
 		counter++;
@@ -24,7 +38,9 @@ int	ft_strlen(char *str)
 
 int	main(void)
 {
-	char str[] = "aha";
+	char	str[];
+
+	str[] = "aha";
 	printf("%d\n", ft_strlen(str));
 	return (0);
 }

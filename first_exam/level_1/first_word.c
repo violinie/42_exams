@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   first_word.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/12 10:23:53 by hanacop           #+#    #+#             */
+/*   Updated: 2025/02/12 10:24:55 by hanacop          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Assignment name  : first_word
 Expected files   : first_word.c
 Allowed functions: write
@@ -30,10 +42,10 @@ $>*/
 
 int	main(int argc, char **argv)
 {
+	int	i;
+
 	if (argc == 2)
 	{
-		int	i;
-
 		i = 0;
 		while (argv[1][i] == ' ')
 			i++;

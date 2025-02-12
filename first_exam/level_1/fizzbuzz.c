@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   fizzbuzz.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/12 10:23:57 by hanacop           #+#    #+#             */
+/*   Updated: 2025/02/12 10:31:55 by hanacop          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Assignment name  : fizzbuzz
 Expected files   : fizzbuzz.c
 Allowed functions: write
@@ -10,7 +22,8 @@ If the number is a multiple of 3, it prints 'fizz' instead.
 
 If the number is a multiple of 5, it prints 'buzz' instead.
 
-If the number is both a multiple of 3 and a multiple of 5, it prints 'fizzbuzz' instead.
+If the number is both a multiple of 3 and a multiple of 5,
+ it prints 'fizzbuzz' instead.
 
 Example:
 
@@ -48,8 +61,9 @@ void	ft_putnbr(int number)
 
 int	main(void)
 {
-	int	i = 1;
+	int	i;
 
+	i = 1;
 	while (i <= 100)
 	{
 		if (i % 3 == 0 && i % 5 == 0)

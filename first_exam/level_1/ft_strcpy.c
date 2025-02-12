@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/12 10:24:02 by hanacop           #+#    #+#             */
+/*   Updated: 2025/02/12 10:31:39 by hanacop          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Assignment name  : ft_strcpy
 Expected files   : ft_strcpy.c
 Allowed functions:
@@ -11,23 +23,27 @@ char    *ft_strcpy(char *s1, char *s2);*/
 
 #include <stdio.h>
 
-char *ft_strcpy(char *dest, const char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
-    unsigned int i = 0;
+	int	i;
 
-    while(src[i])
-    {
-        dest[i] = src[i];
-        i++;
-    }
-    dest[i] = 0;
-    return (dest);
+	i = 0;
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = 0;
+	return (dest);
 }
 
-int main(void)
+int	main(void)
 {
-    char dest[] = " ";
-    char src[] = "source to destination";
-    printf("%s\n", ft_strcpy(dest, src));
-    return (0);
+	char	dest[];
+	char	src[];
+
+	dest = " ";
+	src = "source to destination";
+	printf("%s\n", ft_strcpy(dest, src));
+	return (0);
 }

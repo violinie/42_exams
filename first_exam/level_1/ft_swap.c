@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/12 10:24:06 by hanacop           #+#    #+#             */
+/*   Updated: 2025/02/12 10:28:02 by hanacop          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Assignment name  : ft_swap
 Expected files   : ft_swap.c
 Allowed functions:
@@ -14,7 +26,8 @@ void	ft_swap(int *a, int *b);*/
 
 void	ft_swap(int *a, int *b)
 {
-	int c;
+	int	c;
+
 	c = *a;
 	*a = *b;
 	*b = c;
@@ -24,8 +37,11 @@ void	ft_swap(int *a, int *b)
 
 int	main(void)
 {
-	int a = 1;
-	int b = 3;
+	int	a;
+	int	b;
+
+	a = 1;
+	b = 3;
 	ft_swap(&a, &b);
 	return (0);
 }

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   repeat_alpha.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/12 10:24:08 by hanacop           #+#    #+#             */
+/*   Updated: 2025/02/12 11:45:29 by hanacop          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Assignment name  : repeat_alpha
 Expected files   : repeat_alpha.c
 Allowed functions: write
@@ -29,43 +41,37 @@ $
 $>*/
 
 #include <unistd.h>
-#include <stdbool.h>
-#include <stdio.h>
 
 int	main(int argc, char **argv)
 {
+	int	i;
+	int	c;
+
 	if (argc >= 2)
 	{
-		int	i = 0;
-		int	upperHelper = 64;
-		int lowerHelper = 96;
+		i = 0;
+		c = 0;
 		while (argv[1][i])
 		{
-			bool upper = (argv[1][i] >= 65 && argv[1][i] <= 90);
-			bool lower = (argv[1][i] >= 97 && argv[1][i] <= 122);
-			if(upper)
+			if (argv[1][i] >= 65 && argv[1][i] <= 90)
 			{
-				int multiplicator = argv[1][i] - upperHelper;
-				int z = 0;
-				while (z != multiplicator)
+				while (c != (argv[1][i] - 64))
 				{
 					write(1, &argv[1][i], 1);
-					z++;
+					c++;
 				}
 			}
-			if(lower)
+			c = 0;
+			if (argv[1][i] >= 97 && argv[1][i] <= 122)
 			{
-				int multiplicator = argv[1][i] - lowerHelper;
-				int z = 0;
-				while (z != multiplicator)
+				while (c != (argv[1][i] - 96))
 				{
 					write(1, &argv[1][i], 1);
-					z++;
+					c++;
 				}
 			}
 			i++;
 		}
-
 	}
 	write(1, "\n", 1);
 	return (0);

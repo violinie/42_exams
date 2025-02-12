@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/12 10:24:00 by hanacop           #+#    #+#             */
+/*   Updated: 2025/02/12 10:27:13 by hanacop          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Assignment name  : ft_putstr
 Expected files   : ft_putstr.c
 Allowed functions: write
@@ -25,8 +37,9 @@ void	ft_putstr(char *str)
 
 int	main(void)
 {
-	char	str[] = "My boring test string";
+	char	str[];
+
+	str[] = "My boring test string";
 	ft_putstr(str);
 	return (0);
 }
-
