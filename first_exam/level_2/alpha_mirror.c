@@ -6,7 +6,7 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 16:18:43 by hanacop           #+#    #+#             */
-/*   Updated: 2025/02/12 17:40:03 by hanacop          ###   ########.fr       */
+/*   Updated: 2025/02/12 17:42:30 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,23 +43,19 @@ $>*/
 int	main(int argc, char **argv)
 {
 	int	i;
-	int	z;
- 
+
 	i = 0;
-	z = 0;
 	if (argc == 2)
 	{
 		while(argv[1][i])
 		{
 			if ((argv[1][i] >= 65) && (argv[1][i]) <= 90)
 			{
-				z = argv[1][i] - 65;
-				argv[1][i] = 90 - z;
+				argv[1][i] = 90 - (argv[1][i] - 65);
 			}
 			else if ((argv[1][i] >= 97) && (argv[1][i]) <= 122)
 			{
-				z = argv[1][i] - 97;
-				argv[1][i] = 122 - z;
+				argv[1][i] = 122 - (argv[1][i] - 97);
 			}
 			write(1, &argv[1][i], 1);
 			i++;
