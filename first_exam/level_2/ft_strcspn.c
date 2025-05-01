@@ -6,21 +6,9 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:37:14 by hanacop           #+#    #+#             */
-/*   Updated: 2025/04/29 18:40:41 by hanacop          ###   ########.fr       */
+/*   Updated: 2025/05/01 14:09:31 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*Assignment name	: ft_strcspn
-Expected files	: ft_strcspn.c
-Allowed functions: None
----------------------------------------------------------------
-
-Reproduce exactly the behavior of the function strcspn
-(man strcspn).
-
-The function should be prototyped as follows:
-
-size_t	ft_strcspn(const char *s, const char *reject);*/
 
 // STRing Complement SPaN
 
