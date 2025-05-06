@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   add_prime_sum.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/05/06 16:00:28 by hanacop           #+#    #+#             */
+/*   Updated: 2025/05/06 16:00:29 by hanacop          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 /*Assignment name  : add_prime_sum
 Expected files   : add_prime_sum.c
 Allowed functions: write, exit
@@ -86,7 +98,7 @@ int	main(int argc, char **argv)
 		ft_putnbr(result);
 	}
 	else
-		ft_putnbr(0); 
+		ft_putnbr(0);
 	write(1, "\n", 1);
 	return (0);
 }
