@@ -6,7 +6,7 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 21:27:03 by hanacop           #+#    #+#             */
-/*   Updated: 2025/05/15 21:27:37 by hanacop          ###   ########.fr       */
+/*   Updated: 2025/05/16 15:14:15 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int ascending(int a, int b)
 */
 
 #include <stdio.h>
+#include "list.h"
 
 /*typedef struct s_list t_list;
 
